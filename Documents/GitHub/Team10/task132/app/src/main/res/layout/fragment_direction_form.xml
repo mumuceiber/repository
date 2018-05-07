@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:animateLayoutChanges="true"
+    android:paddingBottom="8dp">
+
+
+    <TableLayout
+        android:layout_width="387dp"
+        android:layout_height="142dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fromTextView"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:text="From"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:tint="#ffffff"
+                app:srcCompat="@drawable/ic_swap" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="384dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/toTextView"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:text="To"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <SearchView
+                android:layout_width="286dp"
+                android:layout_height="match_parent" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#ffffff"
+                app:srcCompat="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:text="Now"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
